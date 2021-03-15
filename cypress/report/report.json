@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-13T13:59:55.585Z",
+    "end": "2021-03-13T14:00:26.836Z",
+    "duration": 30002,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "72ca4285-911c-4698-a10a-4caa58a8f3a9",
+      "title": "",
+      "fullFile": "cypress\\integration\\web_tests\\create_persona.js",
+      "file": "cypress\\integration\\web_tests\\create_persona.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5c2c876b-0561-4a52-b5ef-80058fbef81b",
+          "title": "Creating persona document",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "2144b328-a369-43fc-a2a8-650104a90fc9",
+              "title": "Creating document page tests",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "fill out persona details and send PDF",
+                  "fullTitle": "Creating persona document Creating document page tests fill out persona details and send PDF",
+                  "timedOut": null,
+                  "duration": 25273,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(pageObj.Persona_name).type(persona.Persona_name);\ncy.get(pageObj.Full_name).type(persona.Full_name);\ncy.get(pageObj.Occupation).type(persona.Occupation);\ncy.get(pageObj.Age).type(persona.Age);\ncy.get(pageObj.Sex).click();\ncy.get(pageObj.Sex_male).click();\ncy.get(pageObj.Location).type(persona.Location);\ncy.get(pageObj.Company_size).click();\ncy.get(pageObj.Company_size_50).click();\ncy.get(pageObj.Industry).type(persona.Industry);\ncy.get(pageObj.Education).click();\ncy.get(pageObj.Education_bachelor).click();\ncy.get(pageObj.Family_status).click();\ncy.get(pageObj.Family_status_single).click();\ncy.get(pageObj.Skills_1).type(persona.Skills[0]);\ncy.get(pageObj.Skills_2).type(persona.Skills[1]);\ncy.get(pageObj.Skills_3).type(persona.Skills[2]);\ncy.get(pageObj.Pains).type(persona.Pains);\ncy.get(pageObj.Gains).type(persona.Gains);\ncy.get(pageObj.Jobs_to_be_done).type(persona.Jobs_to_be_done);\ncy.get(pageObj.Pain_relievers).type(persona.Pain_relievers);\ncy.get(pageObj.Gain_creators).type(persona.Gain_creators);\ncy.get(pageObj.Product_and_services).type(persona.Product_and_services);\ncy.get(pageObj.Download).click();\ncy.get(pageObj.Download).click();\ncy.get(pageObj.Send_name).type(persona.Send_name);\ncy.get(pageObj.Send_role).select(persona.Send_role);\ncy.get(pageObj.Send_company).type(persona.Send_company);\ncy.get(pageObj.Send_email).type(persona.Send_email);\ncy.get(pageObj.Send_consent).click();\ncy.get(pageObj.Send_button).click();",
+                  "err": {},
+                  "uuid": "0b1069e2-2c30-4243-9413-e5a94dc96237",
+                  "parentUUID": "2144b328-a369-43fc-a2a8-650104a90fc9",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "removes and adds Pains section",
+                  "fullTitle": "Creating persona document Creating document page tests removes and adds Pains section",
+                  "timedOut": null,
+                  "duration": 4729,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(pageObj.Delete_pains).click({\n  force: true\n});\ncy.get(pageObj.Add_element_title).should(\"have.text\", \"New item\");\ncy.get(pageObj.Add_element).click();\ncy.get(pageObj.Add_pains).click();\ncy.get(pageObj.Last_element).should(\"have.text\", \"Pains\");",
+                  "err": {},
+                  "uuid": "a2d93ec0-7c16-4659-b762-49043d89702a",
+                  "parentUUID": "2144b328-a369-43fc-a2a8-650104a90fc9",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "0b1069e2-2c30-4243-9413-e5a94dc96237",
+                "a2d93ec0-7c16-4659-b762-49043d89702a"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 30002,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportDir": "cypress/report/mochawesome-report/",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

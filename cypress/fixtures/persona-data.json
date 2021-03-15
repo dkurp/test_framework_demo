@@ -1,0 +1,19 @@
+{
+  "Persona_name": "DKAssign",
+  "Full_name": "TestDude",
+  "Occupation": "Candidate",
+  "Age": 27,
+  "Location": "Warsaw",
+  "Industry": "Insurance",
+  "Skills": ["QA", "JS", "some stuff"],
+  "Pains": "Not really, feeling healthy",
+  "Gains": "Not going to gym - corona stuff",
+  "Jobs_to_be_done": "Write automation test",
+  "Pain_relievers": "Morphine or some Ibuprom, idk",
+  "Gain_creators": "Motivational videos on YT",
+  "Product_and_services": "Memes",
+  "Send_name": "DK Assign",
+  "Send_role": "CTO",
+  "Send_company": "Non profit candidate",
+  "Send_email": "domkurpiewski+personastartuphouse@gmail.com"
+}
