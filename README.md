@@ -1,4 +1,4 @@
-# **THIS TESTS ARE NOT WORKING - CLEARED TESTED APP**
+# **THIS TESTS ARE NOT WORKING - ANONIMIZED TESTED APP**
 
 This is a project to show my usual way of working with test automation, it does not enter any testable page.
 
